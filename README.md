@@ -24,6 +24,8 @@ individual data analyses.
 
 ```
 ├── README.md          <- The top-level README for developers using this project.
+├── LICENSE
+|
 ├── data
 │   ├── external       <- Data from third party sources.
 │   ├── interim        <- Intermediate data that has been transformed.
@@ -61,7 +63,7 @@ individual data analyses.
 │   │   └── 04_predict_model.py
 │   │
 │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-│       └── visualize.py
+│       └── 05_visualize.py
 │
 └── .gitignore         <- Indicates which files should be ignored when pushing.
 ```
