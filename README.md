@@ -6,7 +6,7 @@ This template is inspired by the
 ## Setting up the repository
 
 Run the following code from the terminal to set up your repository and conda environment. 
-Make sure that miniconda and python are installed prior. 
+Make sure that [miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html) and [python](https://wiki.python.org/moin/BeginnersGuide/Download) are installed prior. 
 ```
 git clone git@github.com:pepaaran/python_proj_template.git
 cd python_proj_template
