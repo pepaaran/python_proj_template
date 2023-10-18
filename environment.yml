@@ -2,12 +2,21 @@ name: mlenv
 channels:
   - nvidia
   - conda-forge
-  - pytorch
+  - pytorch-nightly
 dependencies:
   - ipython
-  - matplotlib
-  - pandas
+  - setuptools
   - pip
+  - wheel
+  - conda-content-trust
+  - conda-libmamba-solver
   - scikit-learn
   - numpy
   - python
+  - matplotlib
+  - pandas
+# The following are for using pytorch with a GPU
+  - pytorch
+  - torchaudio
+  - torchvision
+  - pytorch-cuda=12.1
