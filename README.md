@@ -27,6 +27,9 @@ packages installed in your current conda environment, with their versions. This 
 workflow, so make sure that your environment file stays up to date with the packages (and versions)
 used in your project.
 
+To work with PyTorch and train models on a GPU, make sure that your CUDA drivers are compatible with 
+the `pytorch` version. Check how to install `pytorch` [here](https://pytorch.org/).
+
 NOTE: If you need to use a package that is unavailable via conda, install it with pip after you've created the 
 conda environment. Do not play with conda again or you risk breaking your environment. Always write in the 
 README.md of your repository in detail how to reproduce your environment, step by step.
