@@ -1,0 +1,13 @@
+name: mlenv
+channels:
+  - nvidia
+  - conda-forge
+  - pytorch
+dependencies:
+  - ipython
+  - matplotlib
+  - pandas
+  - pip
+  - scikit-learn
+  - numpy
+  - python
