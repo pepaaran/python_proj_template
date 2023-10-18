@@ -28,7 +28,14 @@ workflow, so make sure that your environment file stays up to date with the pack
 used in your project.
 
 To work with PyTorch and train models on a GPU, make sure that your CUDA drivers are compatible with 
-the `pytorch` version. Check how to install `pytorch` [here](https://pytorch.org/).
+the `pytorch` version. Check how to install `pytorch` [here](https://pytorch.org/). Then you can check
+if your setup works by starting `python` in a terminal and testing for the presence of accelerated GPU
+deep learning capabilities with the following code snippet. The last command should return `True`!
+
+```
+import torch
+torch.cuda.is_available()
+```
 
 NOTE: If you need to use a package that is unavailable via conda, install it with pip after you've created the 
 conda environment. Do not play with conda again or you risk breaking your environment. Always write in the 
