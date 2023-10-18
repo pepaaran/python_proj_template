@@ -6,16 +6,30 @@ This template is inspired by the
 ## Setting up the repository
 
 Run the following code from the terminal to set up your repository and conda environment. 
-Make sure that [miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html) and [python](https://wiki.python.org/moin/BeginnersGuide/Download) are installed prior. 
+Make sure that [miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html) 
+and [python](https://wiki.python.org/moin/BeginnersGuide/Download) are installed prior. 
 ```
 git clone git@github.com:pepaaran/python_proj_template.git
 cd python_proj_template
 conda env create -f environment.yml --name myenv
 conda activate myenv
 ```
+The `environment.yml` file in this template includes basic data science packages. When starting a new project,
+you may want to assign a custom name to the environment, install any remaining packages used during
+the project and update the environment file running:
 
-If you need to use a package that is unavailable via conda, install it with pip after you've created the 
-conda environment. Do not play with conda again or you risk breaking your environment.
+```
+conda env export --name myname
+```
+
+The previous code will update the packages specified in `environment.yml` to match all the
+packages installed in your current conda environment, with their versions. This is key to a reproducible
+workflow, so make sure that your environment file stays up to date with the packages (and versions)
+used in your project.
+
+NOTE: If you need to use a package that is unavailable via conda, install it with pip after you've created the 
+conda environment. Do not play with conda again or you risk breaking your environment. Always write in the 
+README.md of your repository in detail how to reproduce your environment, step by step.
 
 ## Directory structure
 
